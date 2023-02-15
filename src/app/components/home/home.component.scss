@@ -1,0 +1,28 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        background-color: darkcyan;
+    }
+
+    &__content {
+        width: 100%;
+    }
+}
+
+.spinner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}

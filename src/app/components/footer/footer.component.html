@@ -1,0 +1,11 @@
+<div class="app-footer">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <div class="app-footer__links">
+        <article *ngFor="let link of footerLinks">
+          <span class="app-footer__links--link" (click)="onClickLink(link.url)">{{link.text}}</span>
+        </article>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>

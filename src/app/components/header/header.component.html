@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Metro Food</span>
+    <div *ngIf="userLogged && username" class="app-header">
+      <div class="app-header__session">
+        <span>Hello, {{username}}</span>
+        <span class="app-header__spacer"></span>
+      </div>
+      <mat-icon (click)="onClickLogout()" class="app-header__icon" aria-hidden="false"
+        aria-label="logout icon">logout</mat-icon>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,17 @@
+.app-header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    &__session {
+        display: flex;
+        align-items: flex-end;
+        width: 100px;
+        padding-inline: 10px;
+        justify-content: flex-end;
+    }
+
+    &__icon {
+        cursor: pointer;
+    }
+}

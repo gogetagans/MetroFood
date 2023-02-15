@@ -1,0 +1,24 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 80px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 80px;
+    }
+
+    .container {
+        height: 100%;
+    }
+}

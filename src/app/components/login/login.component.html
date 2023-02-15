@@ -1,0 +1,19 @@
+<div class="login">
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <mat-label>Username</mat-label>
+            <input type="text" matInput [formControl]="usernameFormControl">
+            <mat-error *ngIf="usernameFormControl.hasError('required')">
+                Username is <strong>required</strong>
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput [formControl]="passwordFormControl">
+            <mat-error *ngIf="passwordFormControl.hasError('required')">
+                Password is <strong>required</strong>
+            </mat-error>
+        </mat-form-field>
+    </form>
+    <button mat-stroked-button color="primary" [disabled]="isButtonDisabled()" (click)="onClickEnter()">Entrar</button>
+</div>
